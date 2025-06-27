@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg
+*.egg-info/
+.pytest_cache/
+
+# Environments
+env/
+.env
+venv/
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Datasets
+dataset/
+outputs/
+
+# IDEs and editors
+.vscode/
+*.code-workspace
+.project/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# OS generated files
+.DS_Store
+Thumbs.db

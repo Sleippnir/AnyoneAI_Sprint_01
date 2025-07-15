@@ -1,10 +1,10 @@
-# 📦 E-Commerce Data Pipeline: Brazil 2016–2018
+#  E-Commerce Data Pipeline: Brazil 2016–2018
 
 This is a production-grade data pipeline I developed for a Latin American e-commerce company. The goal was to build a robust and maintainable ETL system to extract actionable insights from internal operational data and external public APIs. The pipeline integrates multiple sources, performs analytical transformations, and generates structured reports focused on revenue and delivery performance.
 
 ---
 
-## 🧩 Business Objective
+##  Business Objective
 
 The company needed a historical analysis of performance from 2016 to 2018, focusing on:
 
@@ -15,7 +15,7 @@ These outputs support business intelligence reporting and operational planning.
 
 ---
 
-## 🔗 Data Sources
+##  Data Sources
 
 ### 1. Internal Data (CSV)
 
@@ -36,7 +36,7 @@ Integrated with [`date.nager.at`](https://date.nager.at) to fetch national holid
 
 ---
 
-## 🏗️ Pipeline Architecture & Tech Stack
+##  Pipeline Architecture & Tech Stack
 
 This is a full Python-based ELT pipeline, built with the following tools:
 

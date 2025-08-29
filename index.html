@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELT Brazil E-Commerce Analysis</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .container {
+            max-width: 960px;
+            margin: auto;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .plot {
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ELT Brazil E-Commerce Analysis</h1>
+        <p>This report presents an analysis of the Brazilian e-commerce dataset, including various visualizations of revenue, delivery, and order data.</p>
+
+        <div class="plot">
+            <h2>Revenue by Month and Year (2017)</h2>
+            <img src="outputs/plots/plot_revenue_by_month_year.png" alt="Revenue by Month and Year">
+            <p><strong>Analysis:</strong> This plot shows the revenue trend for the year 2017. There is a noticeable upward trend in revenue throughout the year, with a significant peak in November, likely due to Black Friday sales. The months of December also show a strong performance, which can be attributed to the holiday season.</p>
+        </div>
+
+        <div class="plot">
+            <h2>Top 10 Revenue Categories</h2>
+            <img src="outputs/plots/plot_top_10_revenue_categories.png" alt="Top 10 Revenue Categories">
+            <p><strong>Analysis:</strong> This treemap highlights the top 10 revenue-generating product categories. "Bed Bath Table" and "Health Beauty" are the leading categories, indicating a strong market for home goods and personal care products.</p>
+        </div>
+
+        <div class="plot">
+            <h2>Top 10 Revenue Categories (Amount)</h2>
+            <img src="outputs/plots/plot_top_10_revenue_categories_amount.png" alt="Top 10 Revenue Categories (Amount)">
+            <p><strong>Analysis:</strong> This pie chart provides a different view of the top 10 revenue categories, showing their proportional contribution to the total revenue. It reinforces the dominance of the "Bed Bath Table" and "Health Beauty" categories.</p>
+        </div>
+
+        <div class="plot">
+            <h2>Top 10 Least Revenue Categories</h2>
+            <img src="outputs/plots/top_10_least_revenue_categories.png" alt="Top 10 Least Revenue Categories">
+            <p><strong>Analysis:</strong> This chart shows the 10 categories with the lowest revenue. Categories like "Security and Services" and "Fashion Childrens Clothes" have very low sales, suggesting they are either niche markets or have not been effectively promoted.</p>
+        </div>
+
+        <div class="plot">
+            <h2>Revenue per State</h2>
+            <img src="outputs/plots/revenue_per_state.png" alt="Revenue per State">
+            <p><strong>Analysis:</strong> This treemap illustrates the revenue distribution across different states in Brazil. São Paulo (SP) is by far the largest market, followed by Rio de Janeiro (RJ) and Minas Gerais (MG). This concentration of sales in the southeastern states is a key characteristic of the Brazilian e-commerce market.</p>
+        </div>
+
+        <div class="plot">
+            <h2>Delivery Date Difference</h2>
+            <img src="outputs/plots/delivery_difference.png" alt="Delivery Date Difference">
+            <p><strong>Analysis:</strong> This bar plot shows the average difference between the estimated delivery date and the actual delivery date for each state. Most states have a positive difference, meaning that deliveries are generally made earlier than estimated. However, some states in the North and Northeast, like AC and RO, have a larger difference, which could be due to logistical challenges in these regions.</p>
+        </div>
+
+        <div class="plot">
+            <h2>Real vs. Predicted Delivery Time (2017)</h2>
+            <img src="outputs/plots/real_vs_predicted_delivered_time.png" alt="Real vs. Predicted Delivery Time">
+            <p><strong>Analysis:</strong> This line plot compares the real and estimated delivery times throughout 2017. The estimated delivery time is consistently higher than the real delivery time, which is a positive indicator of the company's logistics performance. The gap between the two lines narrows towards the end of the year, which might be due to increased demand during the holiday season.</p>
+        </div>
+
+        <div class="plot">
+            <h2>Global Amount Order Status</h2>
+            <img src="outputs/plots/global_amount_order_status.png" alt="Global Amount Order Status">
+            <p><strong>Analysis:</strong> This donut chart provides a snapshot of the order statuses. The vast majority of orders are "Delivered," which is a good sign. The other statuses, such as "Shipped," "Canceled," and "Processing," represent a small fraction of the total orders.</p>
+        </div>
+
+        <div class="plot">
+            <h2>Orders per Day and Holidays (2017)</h2>
+            <img src="outputs/plots/order_amount_per_day_with_holidays.png" alt="Orders per Day and Holidays">
+            <p><strong>Analysis:</strong> This plot shows the daily order volume in 2017, with public holidays marked. There doesn't appear to be a strong, consistent correlation between holidays and a decrease in orders. In some cases, there are even spikes in orders around holidays, which could be due to promotional campaigns.</p>
+        </div>
+
+        <div class="plot">
+            <h2>Freight Value vs. Weight Relationship</h2>
+            <img src="outputs/plots/freight_value_weight_relationship.png" alt="Freight Value vs. Weight Relationship">
+            <p><strong>Analysis:</strong> This scatter plot explores the relationship between freight value and product weight. As expected, there is a positive correlation: as the weight of the product increases, the freight value also tends to increase. However, there is a significant amount of variance, which could be due to other factors like distance, product category, and shipping method.</p>
+        </div>
+
+        <div class="plot">
+            <h2>Power BI Visualization Proposal</h2>
+            <h3>Interactive Sales and Delivery Dashboard</h3>
+            <p><strong>Description:</strong> To complement the static plots in this report, an interactive Power BI dashboard could be created. This dashboard would provide a dynamic and more granular view of the sales and delivery data. Key features would include:</p>
+            <ul>
+                <li><strong>Sales Performance Dashboard:</strong> An interactive map of Brazil showing sales by state, with the ability to drill down to the city level. Slicers for date, product category, and payment method would allow for a detailed analysis of sales trends.</li>
+                <li><strong>Delivery Logistics Analysis:</strong> A dashboard focused on delivery performance, with KPIs for average delivery time, on-time delivery rate, and freight costs. Users could filter by state, city, and shipping carrier to identify bottlenecks and opportunities for improvement.</li>
+                <li><strong>Customer Analysis:</strong> A view of customer demographics, purchase history, and review scores. This would help in understanding customer behavior and identifying the most valuable customer segments.</li>
+            </ul>
+            <p><strong>Benefits:</strong></p>
+            <ul>
+                <li><strong>Interactivity:</strong> Users could explore the data themselves, leading to deeper insights.</li>
+                <li><strong>Real-time Data:</strong> The dashboard could be connected to a live database for up-to-date information.</li>
+                <li><strong>Data-driven Decisions:</strong> The insights from the dashboard would enable better decision-making in areas like marketing, logistics, and customer service.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

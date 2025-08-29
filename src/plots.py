@@ -222,13 +222,13 @@ def plot_top_10_least_revenue_categories(df: DataFrame, output_path=None):
         plt.show()
 
 
-def plot_top_10_revenue_categories_ammount(df: DataFrame, output_path=None):
+def plot_top_10_revenue_categories_amount(df: DataFrame, output_path=None):
     """Plot top 10 revenue categories
 
     Args:
         df (DataFrame): Dataframe with top 10 revenue categories query result
     """
-    # Plotting the top 10 revenue categories ammount
+    # Plotting the top 10 revenue categories amount
     fig, ax = plt.subplots(figsize=(6, 3), subplot_kw=dict(aspect="equal"))
 
     elements = df["Category"]
@@ -249,10 +249,10 @@ def plot_top_10_revenue_categories_ammount(df: DataFrame, output_path=None):
     p = plt.gcf()
     p.gca().add_artist(my_circle)
 
-    ax.set_title("Top 10 Revenue Categories ammount")
+    ax.set_title("Top 10 Revenue Categories Amount")
 
     if output_path:
-        fig.savefig(f"{output_path}/top_10_revenue_categories_ammount.png")
+        fig.savefig(f"{output_path}/plot_top_10_revenue_categories_amount.png")
     else:
         plt.show()
 

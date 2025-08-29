@@ -29,6 +29,7 @@ Anonymized transactional records (~100K orders) exported from internal systems, 
 - `order_reviews.csv`
 
 The database schema is visualized in `images/data_schema.png`.
+Plots available ['here'](https://sleippnir.github.io/ELT-Brazil/)
 
 ### 2. External API: Brazilian Public Holidays
 
